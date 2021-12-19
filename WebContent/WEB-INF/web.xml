@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+	
+	<!-- IT19114736 De Silva K.C.C.C -->
+	<!-- Login -->
+       
+	<servlet>
+			<servlet-name>login</servlet-name>
+			<servlet-class>com.user.LoginServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+			<servlet-name>login</servlet-name>
+			<url-pattern>/log</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+			<servlet-name>loginAdmin</servlet-name>
+			<servlet-class>com.user.AdminLoginServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+			<servlet-name>loginAdmin</servlet-name>
+			<url-pattern>/logAdmin</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	<!-- IT19114736 De Silva K.C.C.C -->
+	<!-- Patient -->
+	
+	<servlet>
+			<servlet-name>addPatient</servlet-name>
+			<servlet-class>com.user.AddPatient</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+			<servlet-name>addPatient</servlet-name>
+			<url-pattern>/addPatient</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+			<servlet-name>pDetails</servlet-name>
+			<servlet-class>com.user.PatientDetails</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+			<servlet-name>pDetails</servlet-name>
+			<url-pattern>/pDetails</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+			<servlet-name>updatePatient</servlet-name>
+			<servlet-class>com.user.UpdatePatientServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+			<servlet-name>updatePatient</servlet-name>
+			<url-pattern>/updatePatient</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+			<servlet-name>deletePatient</servlet-name>
+			<servlet-class>com.user.DeletePatientServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+			<servlet-name>deletePatient</servlet-name>
+			<url-pattern>/deletePatient</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	<!-- IT19117874 Amarasinghe W.K.P.G -->
+	<!-- Bill -->
+	
+	<servlet>
+		<servlet-name>bill</servlet-name>
+		<servlet-class>com.user.billServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>bill</servlet-name>
+		<url-pattern>/bill</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>BillInsert</servlet-name>
+		<servlet-class>com.user.BillInsertServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>BillInsert</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateBill</servlet-name>
+		<servlet-class>com.user.updateBillServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>updateBill</servlet-name>
+		<url-pattern>/Update</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>billDelete</servlet-name>
+		<servlet-class>com.user.deleteBillServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>billDelete</servlet-name>
+		<url-pattern>/billDelete</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	
+	
+	
+
+</web-app>         
